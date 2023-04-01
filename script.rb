@@ -1,8 +1,8 @@
 class Board
     attr_accessor :fields
   
-    def initialize(rows)
-      @fields = Array.new(rows) { Array.new(3, '-') }
+    def initialize
+      @fields = Array.new(3) { Array.new(3, '-') }
     end
   
     def print_board
@@ -12,6 +12,6 @@ class Board
     end
   end
   
-  new_board = Board.new(3)
+  new_board = Board.new
   new_board.print_board
   
